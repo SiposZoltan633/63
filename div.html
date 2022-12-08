@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evszakok</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<style>
+    .tavasz {
+        border: 1px dotted black;
+        height: 200px;
+        width: 200px;
+    }
+    .nyár {
+        border: 1px dotted black;
+        height: 200px;
+        width: 200px;
+    }
+    .ősz {
+        border: 1px dotted black;
+        height: 200px;
+        width: 200px;
+    }
+    .tél {
+        border: 1px dotted black;
+        height: 200px;
+        width: 200px;
+    }
+    .tavasz:hover {
+        transform: scale(1.1);
+    }
+    .nyár:hover {
+        transform: scale(1.1);
+    }
+    .ősz:hover {
+        transform: scale(1.1);
+    }
+    .tél:hover {
+        transform: scale(1.1);
+    }
+    ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+
+
+</style>
+
+</head>
+<body bgcolor="yellow">
+
+    <ul class="ul">
+        <li><a href="https://siposzoltan633.github.io/Web/">főoldal</a></li>
+        <li><a href="https://siposzoltan633.github.io./Web/táblázat.html">órarend</a></li>
+        <li><a href="https://siposzoltan633.github.io./Web/ürlap.html">ürlap</a></li>
+        <li><a href="https://siposzoltan633.github.io/Web/barack.html">kattintos feladat</a></li>
+        <li><a href="https://siposzoltan633.github.io/Web/lista.html">lista</a></li>
+        <li><a class="active" href="https://siposzoltan633.github.io/Web/div.html">évszakok</a></li>
+      </ul>
+
+    <div class="tavasz"><img border="5" height="200px" width="200px" src="tavasz.jpg"></div>
+    <br>
+    <div class="nyár"><img border="5" height="200px" width="200px" src="nyar.jpg"></div>
+    <br>
+    <div class="ősz"><img border="5" height="200px" width="200px" src="ősz.jpg"></div>
+    <br>
+    <div class="tél"><img border="5" height="200px" width="200px" src="tél.jpg"></div>
+    
+</body>
+</html>
