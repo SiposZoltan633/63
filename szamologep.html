@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Számologép</title>
+    <link rel="stylesheet" href="szamol.css">
+</head>
+<body background="../hullám.png">
+        <fieldset>
+            <form action="javascript:oa()">
+            <legend>számológép</legend>
+        <input type="number" id="a" placeholder="Number 1">
+        <br>
+        <input type="number" id="b" placeholder="Number 2">
+        <br>
+        <br>
+        <input type="text" id="c" placeholder="eredmény">
+        <br>
+        <button type="submit" value="+">+</button>
+        </form>
+        
+        <form action="javascript:kv()">
+        <button type="submit" value="-">-</button>
+        </form>
+
+        <form action="javascript:sr()">
+            <button type="submit" value="*">X</button>
+            </form>
+
+        <form action="javascript:ot()">
+            <button type="submit" value="/">:</button>
+            </form>
+        </fieldset>
+
+    <script>
+        function oa() {
+        c.value = Number(a.value) + Number(b.value)
+        }
+        function kv() {
+        c.value = Number(a.value) - Number(b.value)
+        }
+        function sr() {
+        c.value = Number(a.value) * Number(b.value)
+        }
+        function ot() {
+        c.value = Number(a.value) / Number(b.value)
+        }
+    </script>
+
+
+
+</body>
+</html
