@@ -4,90 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SZ oldala</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/site.webmanifest">
-<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="theme-color" content="#ffffff">
-
-    <style>
-      .fentre {
-        text-align: right;
-      }
-      
-      footer {
-        text-align: right;
-      }
-    </style>
+    <title>Számologép</title>
+    <link rel="stylesheet" href="math.css">
 </head>
-<body>
-  
-    <style>
-        h1 {background-color: #001aff;}
-        h2 {background-color: #9dff00;}
-        h3 {background-color: #ff0000;}
-        h4 {background-color: #ffd900;}
-        h5 {background-color: #00ff227a;}
-        h6 {background-color: rgb(0, 238, 255);}
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-        }
+<body bgcolor="gray">
+    <h1>számológép</h1>
+        <fieldset class="hatter">
+            <form action="javascript:oa()">
+            <legend>számológép</legend>
+        <input type="number" id="a" placeholder="Number 1">
+        <br>
+        <input type="number" id="b" placeholder="Number 2">
+        <br>
+        <br>
+        <input type="text" id="c" placeholder="eredmény">
+        <br>
+        <button type="submit" value="+">+</button>
+        </form>
         
-        li {
-          float: left;
-        }
-        
-        li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color: #04AA6D;
-        }
-        </style>
-    <ul class="ul">
-        <li><a class="active" href="https://siposzoltan633.github.io/Web/">főoldal</a></li>
-        <li><a href="https://siposzoltan633.github.io./Web/táblázat.html">órarend</a></li>
-        <li><a href="https://siposzoltan633.github.io./Web/ürlap.html">ürlap</a></li>
-        <li><a href="https://siposzoltan633.github.io/Web/barack.html">kattintos feladat</a></li>
-        <li><a href="https://siposzoltan633.github.io/Web/lista.html">lista</a></li>
-        <li><a href="https://siposzoltan633.github.io/Web/div.html">évszakok</a></li>
-        <li><a href="https://siposzoltan633.github.io/Web/homoktovis.html">Homoktovis</a></li>
-        <li><a href="https://siposzoltan633.github.io/Web/szamologep.html">számológép</a></li>
-        <li><a href="https://siposzoltan633.github.io/Web/pitagorasz.html">Pitagorasz tétel</a></li>
-      </ul>
-      
+        <form action="javascript:kv()">
+        <button type="submit" value="-">-</button>
+        </form>
 
-    <h1>Sipos Zoltán</h1>
-    <h2>Sipos Zoltán</h2>
-    <h3>Sipos Zoltán</h3>
-    <h4>Sipos Zoltán</h4>
-    <h5>Sipos Zoltán</h5>
-    <h6>Sipos Zoltán</h6>
-    <p>Ez itt egy bekezdés,amibe lehet sokat írni</p>
-    <img border="5" src="collage.jpg">
-      <footer class="üzenet">
-        <p>Sipos Zoltán<br>
-        <a href="mailto:siposz6363@gmail.com">siposz6363@gmail.com</a></p>
-      </footer>
-      <a href="https://siposzoltan633.github.io./Web/index.html">
-        <div class="fentre"><img src="nyíil.jpg" border="5" width="50px" height="50px"></div>
-      </a>
+        <form action="javascript:sr()">
+            <button type="submit" value="*">X</button>
+            </form>
+
+        <form action="javascript:ot()">
+            <button type="submit" value="/">:</button>
+            </form>
+
+        </fieldset>
+
+    <hr>
+
+        <fieldset class="hatter">
+            <form action="javascript:nt()">
+                <legend>négyzet területe, kerülete</legend>
+        <input type="number" id="d" placeholder="A">
+            <br>
+        <input type="text" id="e" placeholder="terület">
+        <button type="submit" value="*">Terület számitás</button>
+            </form>
+
+            <form action="javascript:nk()">
+        <input type="text" id="f" placeholder="kerület">
+        <button type="submit" value="*">Kerület számitás</button>
+            </form>
+
+        </fieldset>
+
+        <hr>
+
+        <fieldset class="hatter">
+            <form action="javascript:kt()">
+                <legend>kör területe,kerülete</legend>
+                <input type="number" id="g" placeholder="r">
+                <br>
+                <input type="text" id="h" placeholder="terület">
+                <button type="submit" value="*">terület számitás</button>
+            </form>
+
+            <form action="javascript:kk()">
+                <input type="text" id="i" placeholder="kerület">
+                <button type="submit" value="*">kerület számitás</button>
+            </form>
+        </fieldset>
+        <hr>
+        <fieldset class="hatter">
+            <form action="javascript:tt()">
+                <legend>téglalap területe,kerülete</legend>
+                <input type="number" id="j" placeholder="a">
+                <br>
+                <input type="number" id="k" placeholder="b">
+                <br>
+                <input type="text" id="t" placeholder="terület">
+                <button type="submit" value="*">terület számitás</button>
+            </form>
+
+            <form action="javascript:tk()">
+                <input type="text" id="l" placeholder="kerület">
+                <button type="submit" value="*">kerület számitás</button>
+            </form>
+
+        </fieldset>
+
+    <script>
+        function oa() {
+        c.value = Number(a.value) + Number(b.value)
+        }
+        function kv() {
+        c.value = Number(a.value) - Number(b.value)
+        }
+        function sr() {
+        c.value = Number(a.value) * Number(b.value)
+        }
+        function ot() {
+        c.value = Number(a.value) / Number(b.value)
+        }
+        function nt() {
+        e.value = Number(d.value) * Number(d.value)
+        }
+        function nk() {
+        f.value = (4) * Number(d.value)
+        }
+        function kt() {
+        h.value = Number(g.value) * Number(g.value) * (3.14159)
+        }
+        function kk() {
+        i.value = (2) * Number(g.value) * (3.14159)
+        }
+        function tt() {
+        t.value = Number(j.value) * Number(k.value)
+        }
+        function tk() {
+        l.value = (2) * (Number(j.value) * Number(k.value))
+        }
+    </script>
+
+
+
 </body>
-</html>
+</html
